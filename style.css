@@ -1,5 +1,6 @@
 :root{
     --color-principal:black;
+    --maximo-de-largo: 960px;
 }
 *{
     box-sizing: border-box;
@@ -18,27 +19,40 @@ header {
     background-color: var(--color-principal);
     color: white;
     text-align: center;
-    padding: 1em;
+
 }
-.contenedor-logo{
-    display: flex;
+.info{
+
 }
+.contenedor{
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
 .Logo{
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
 }
 .container {
-    max-width: 960px;
+    max-width: var(--maximo-de-largo);
     margin: 0 auto;
     padding: 2em;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-h1 {
-    margin-top: 0;
-}
+
+
 .project {
     margin-bottom: 2em;
     border: 1px solid #ccc;
     padding: 1em;
+}
+
+/*footer*/
+
+footer{
+    max-width:var(--maximo-de-largo);
+    height: 5px;
+    background-color: black;
 }
